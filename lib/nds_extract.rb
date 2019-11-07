@@ -7,10 +7,9 @@ def directors_totals(nds)
   row_index = 0 
   dir_hash = {}
   final_hash = {}
-  dir_gross = 0
   
   while row_index < nds.length do
-    
+    dir_gross = 0
     column_index = 0 
     while column_index < nds[row_index][:movies].length do
       dir_gross += nds[row_index][:movies][column_index][:worldwide_gross]
